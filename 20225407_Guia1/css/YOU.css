@@ -1,0 +1,97 @@
+/* Estilos generales */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #220000;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+header {
+    background-color: #a51616;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    margin: 0;
+    font-size: 5em;
+}
+
+h2 {
+    color: #e43434;
+    margin-top: 20px;
+}
+
+/* Sección de contenido */
+#main-content {
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Estilos de los párrafos */
+p {
+    margin-bottom: 15px;
+}
+
+.parrafo {
+    background-color: #fff3e0;
+    padding: 20px;
+    border-left: 5px solid #ea4e4e;
+}
+
+.cast {
+    padding: 10px;
+    background-color: #ffe0b2;
+}
+
+.cast-list {
+    list-style-type: square;
+}
+
+.cast-list li {
+    margin-bottom: 10px;
+}
+
+/* Imagen */
+#you-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#you-cast {
+    width: 80%; /* Tamaño al 50% del contenedor */
+    max-width: 1000px; /* La imagen no será más ancha que 400px */
+    height: auto; /* Mantiene la proporción de la imagen */
+    display: block;
+    margin: 20px auto; /* Centrar la imagen con márgenes */
+    border-radius: 10px; /* Bordes redondeados opcionalmente */
+}
+
+
+/* Enlaces */
+a {
+    color: #ea4e4e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
