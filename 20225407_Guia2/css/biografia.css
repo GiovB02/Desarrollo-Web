@@ -1,0 +1,144 @@
+* {
+	margin: 0;
+	padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+header {
+    background-image: url('../img/giovanna.jpg');
+	background-position: center 0;
+	background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
+#efecto {
+	height: 100vh;
+	background: radial-gradient(circle, rgba(185,185,185,0.2),  rgba(40,40,40, 0.6));
+	text-align: center;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-align: center;
+	    align-items: center;
+	-ms-flex-pack: center;
+	    justify-content: center;
+}
+
+header h1, header h3, header h4 {
+	color: white;
+	font-family: 'Century Gothic', sans-serif;
+	text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
+}
+
+header h1 {
+	font-size: 4.3em;
+	letter-spacing: 0.13em;
+	padding-bottom: 0.21em;
+}
+
+header h3 {
+	font-weight: 300;
+	font-size: 1.5em;
+	letter-spacing: 0.15em;
+}
+
+header h4 {
+	font-weight: 300;
+	font-size: 1.3em;
+	letter-spacing: 0.2em;
+}
+
+body, html {
+	height: 100%;
+}
+
+body {
+    overflow-x: hidden;
+    color: #181818;
+    background-color: #f1ffd3;
+    font-family: 'Century Gothic', sans-serif;
+    line-height: 1.6;
+}
+
+#body {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #4eab18;
+    text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+body p {
+    font-size: 1.2em;
+    text-align: justify;
+    margin: 0 auto;
+    max-width: 900px;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav span a {
+    background-color: #699d2a;
+    color: white;
+    font-size: 18px;
+    padding: 12px 20px;
+    text-decoration: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav span a:hover {
+    background-color: #3f670e;
+}
+
+footer {
+    background-color: #b1ef7c;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+    font-size: 0.9em;
+    border-top: 1px solid #fff;
+}
+
+footer p {
+    margin: 0;
+}
+
+#gustos {
+    margin-top: 40px;
+}
+
+.gustos-seccion {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.gustos-seccion h3 {
+    color: #4eab18;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.gustos-seccion p {
+    font-size: 1.1em;
+    color: #333;
+}
