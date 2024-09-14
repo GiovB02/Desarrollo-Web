@@ -18,22 +18,29 @@
             height: 100vh;
         }
 
-        /* Estilo para el título */
-        h1 {
-            color: #2d005a;
-            text-align: center;
+        /* Contenedor para ambas guías */
+        .contenedor-guias {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Espacio entre las dos guías */
             margin-top: 150px;
         }
 
-        /* Estilo de la sección que contiene los enlaces */
-        .primeraguia {
+        /* Estilo para los cuadros guía */
+        .guia {
             background-color: white;
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
-            margin-top: auto;
-            margin-bottom: auto;
+            width: 200px; /* Fijar ancho para simetría */
+        }
+
+        /* Estilo para los títulos */
+        h1 {
+            color: #2d005a;
+            text-align: center;
+            margin-top: 20px;
         }
 
         /* Estilo para los enlaces */
@@ -56,12 +63,23 @@
 </head>
 <body>
     <h1>Índice de Guías</h1>
-    <section class="primeraguia">
-        <p><b>Guía 1</b></p>
-        <a href="20225407_Guia1/estilos_embebidos.html">Ejercicio 1</a>
-        <a href="20225407_Guia1/ejemplo2.html">Ejercicio 2</a>
-        <a href="20225407_Guia1/paises.html">Ejercicio 3</a>
-        <a href="20225407_Guia1/SerieYOU.html">Serie Favorita</a>
-    </section>
+    <div class="contenedor-guias">
+        <!-- Primer cuadro de Guía 1 -->
+        <section class="guia">
+            <p><b>Guía 1</b></p>
+            <a href="20225407_Guia1/estilos_embebidos.html">Ejercicio 1</a>
+            <a href="20225407_Guia1/ejemplo2.html">Ejercicio 2</a>
+            <a href="20225407_Guia1/paises.html">Ejercicio 3</a>
+            <a href="20225407_Guia1/SerieYOU.html">Serie Favorita</a>
+        </section>
+
+        <!-- Segundo cuadro de Guía 2 -->
+        <section class="guia">
+            <p><b>Guía 2</b></p>
+            <a href="20225407_Guia2/pelicula.html">Ejercicio 1</a>
+            <a href="20225407_Guia2/tablero.html">Ejercicio 2</a>
+            <a href="20225407_Guia2/biografia.html">Biografía</a>
+        </section>
+    </div>
 </body>
 </html>

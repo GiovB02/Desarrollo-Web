@@ -65,8 +65,3 @@ section article p::first-letter {
 section article:first-child p::first-line {
     text-decoration: underline;
 }
-
-hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}

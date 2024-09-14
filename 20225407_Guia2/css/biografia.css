@@ -13,16 +13,14 @@ header {
 }
 
 #efecto {
-	height: 100vh;
-	background: radial-gradient(circle, rgba(185,185,185,0.2),  rgba(40,40,40, 0.6));
-	text-align: center;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-pack: center;
-	    justify-content: center;
+    height: 100vh;
+    background: radial-gradient(circle, rgba(185,185,185,0.2), rgba(40,40,40,0.6));
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+
 
 header h1, header h3, header h4 {
 	color: white;
@@ -48,14 +46,10 @@ header h4 {
 	letter-spacing: 0.2em;
 }
 
-body, html {
-	height: 100%;
-}
-
 body {
     overflow-x: hidden;
     color: #181818;
-    background-color: #f1ffd3;
+    background-color: #e7ffb4;
     font-family: 'Century Gothic', sans-serif;
     line-height: 1.6;
 }
@@ -81,8 +75,11 @@ body p {
     margin: 0 auto;
     max-width: 900px;
     color: #333;
-    background-color: #fff;
     padding: 20px;
+}
+
+#body p{
+    background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -109,36 +106,40 @@ nav span a:hover {
 
 footer {
     background-color: #b1ef7c;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    margin-top: 50px;
-    font-size: 0.9em;
-    border-top: 1px solid #fff;
-}
-
-footer p {
-    margin: 0;
 }
 
 #gustos {
     margin-top: 40px;
 }
 
-.gustos-seccion {
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
-.gustos-seccion h3 {
+#informática h3, #musica h3, #familia h3, #mascota h3, #staff h3 {
     color: #4eab18;
     text-align: center;
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-.gustos-seccion p {
+#informática, #musica, #familia, #mascota, #staff {
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+#gustos-seccion p {
     font-size: 1.1em;
     color: #333;
+}
+
+hr {
+    border: 1px solid #0b380e;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
