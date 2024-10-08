@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="formados">
+    <form action="Ejercicio3.html" method="post">
+        <img src="img/foto-perfil.jpg" alt="Foto perfil"/><h1>Perfil</h1>
+
+        <fieldset id="datos">
+            <legend>Datos</legend>
+            <Table border="0">
+            <TR><TD>fecha de nacimiento:</TD><TD><input type="date"name="apellido"/></TD></TR>
+            <Tr><TD>Ingrese su foto:</TD><Td><input type="file" name="foto"/></Td></Tr>
+            <TR><TD>Nacionalidad:</TD>
+            <td>
+                <input type="text" list="nacionalidad"/>
+                <datalist id="nacionalidad">
+                    <option value="Salvadoreño">Salvadoreño(a)</option>
+                    <option value="Hondureño">Hondureño(a)</option>
+                    <option value="Guatemalteco">Guatemalteco(a)</option>
+                    <option value="Costarricense">Constarricense</option>
+                    <option value="Nicaraguense">Nicarag&uuml;ense</option>
+                    <option value="Panameño">Panameño(a)</option>
+                </datalist>
+            </td></TR>
+            <tr><td>Color favorito:</td><td><input type="color" name="color"></td></tr>
+            <TR><TD>Sexo:</TD>
+            <TR><input type="radio" name="sexo" value="mas"checked>Masculino</BR>
+            <input type="radio" name="sexo" value="fem">Femenino</TD></TR>
+            <TR><TD>Edad:</TD><TD><input type="number" name="edad" min="18" max="50"/></TD></TR>
+            <TR><TD>Direcci&oacute;n:</TD><TD><textarea rows="5" cols="30"></textarea></TD></TR>
+            </Table>
+        </fieldset>
+
+        <fieldset id="temas">
+            <legend>Temas</legend>
+            Elija tema de interes:<br><br>
+            <input type="radio" name="tema" value="ciencia" checked>ciencia<br>
+            <input type="radio" name="tema" value="arte">arte<br>
+            <input type="radio" name="tema" value="literatura">literatura<br>
+            <input type="radio" name="tema" value="tecnologia">tecnologia<br>
+            <input type="radio" name="tema" value="musica">musica<br>
+            <input type="radio" name="tema" value="informatica">informatica<br><br>
+              Libros y articulos de su interes:
+            <select id="Selarea" multiple>
+                <option value="Asp">Asp.net</option>
+                <option value="vb">vb.net</option>
+                <option value="C#">c#.net</option>
+                <option value="JAvascript">JavaScript</option>
+                <option value="php">PHP</option>
+                <option value="Java">Java</option>
+                <option value="Android">Android</option>
+                <option value="Cisco">Curricula Cisco</option>
+                <option value="Redes">Redes comunicación informatica</option>
+                <option value="SQL">SQL</option>
+                <option value="Oracel">Oracle</option>
+                
+            </select>
+        </fieldset>
+
+        <fieldset id="aficiones">
+            <legend>Aficiones</legend>
+             Elija su pasatiempo:<br><br>
+            <input type="checkbox" name="aficion" value="deporte" checked>Deporte<br>
+            <input type="checkbox" name="aficion" value="musica">Música<br>
+            <input type="checkbox" name="aficion" value="lectura">Lectura<br>
+            <input type="checkbox" name="aficion" value="pesca">Pesca<br>
+            <input type="checkbox" name="aficion" value="pasear">Pasear<br>
+            <input type="checkbox" name="aficion" value="cine">Cine
+        </fieldset>
+        <button class="boton" type="submit">Enviar Información</button>
+
+    </form>
+    
+</body>
+</html>

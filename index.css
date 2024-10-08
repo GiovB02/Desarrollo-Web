@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+header {
+    background-color: #a68cd1;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #36156b;
+    margin: 20px;
+}
+
+header nav {
+    margin-top: 10px;
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    position: relative;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: beige;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+header h1{
+    color: #36156b;
+    margin: 20px;
+}
+
+header nav ul li a:hover {
+    background-color: #c32280;
+    color: white;
+}
+
+body {
+    background-image: url('https://img.freepik.com/foto-gratis/campo-tulipanes-holanda-u-holanda_155003-24780.jpg?t=st=1728356890~exp=1728360490~hmac=bfcf319fef30a68d873efffc89d8c7cda59796d074fa1fc6341929af26a9b2a1&w=996'); /* Cambia la URL de la imagen */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Century Gothic', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+section {
+    backdrop-filter: blur(10px); 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 30px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+header {
+    margin-bottom: 40px;
+    background-color: #a68cd1;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #36156b;
+    font-size: 26px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #c32280;
+    padding-bottom: 5px;
+}
+
+p, li {
+    color: #555;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.guide-button {
+    display: inline-block;
+    background-color: #e1419e;
+    color: #fff;
+    padding: 80px 30px;
+    border-radius: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    width: 200px;
+    text-transform: uppercase;
+}
+
+.guide-button:hover {
+    background-color: #a0005c;
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+h1{
+    color: #36156b;
+    background-color: #a68cd1;
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+.contenedor-guias {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.guia {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+.guia p {
+    font-size: 22px;
+    color: #c32280;
+    margin-bottom: 15px;
+}
+
+.guia a {
+    display: block;
+    color: #36156b;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 40px 0;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+}
+
+.guia a:hover {
+    color: #c32280;
+    background-color: #eb88d9;
+    border-radius: 10px;
+}
+
+
+/* Pantallas medianas (tablets) */
+@media (max-width: 1200px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .guide-button {
+        width: 100%;
+        max-width: 350px;
+        margin: 15px 0;
+    }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+    section {
+        padding: 15px;
+        margin: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p, li {
+        font-size: 16px;
+    }
+
+    header nav {
+        display: none; /* Ocultar la navegación en pantallas pequeñas */
+    }
+
+    .guide-button {
+        padding: 60px 20px;
+        font-size: 16px;
+    }
+
+    .contenedor-guias {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Pantallas muy pequeñas (móviles más pequeños) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        margin: 10px;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+
+    .guide-button {
+        padding: 40px 10px;
+        font-size: 14px;
+        width: 100%;
+    }
+
+    section {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p, li {
+        font-size: 14px;
+    }
+}

@@ -3,94 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Inicio</title>
-    <style>
-        /* Estilo general del cuerpo */
-        body {
-            font-family: 'Century Gothic', sans-serif;
-            background-color: #efc0f9;
-            color: #333;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            height: 100vh;
-        }
-
-        /* Contenedor para ambas guías */
-        .contenedor-guias {
-            display: flex;
-            justify-content: center;
-            gap: 20px; /* Espacio entre las dos guías */
-            margin-top: 150px;
-        }
-
-        /* Estilo para los cuadros guía */
-        .guia {
-            background-color: white;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            width: 200px; /* Fijar ancho para simetría */
-        }
-
-        /* Estilo para los títulos */
-        h1 {
-            color: #2d005a;
-            text-align: center;
-            margin-top: 20px;
-        }
-
-        /* Estilo para los enlaces */
-        a {
-            display: block;
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #2d0052;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Efecto al pasar el cursor sobre los enlaces */
-        a:hover {
-            background-color: #2980b9;
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="index.css">
+    <title>Portafolio de Giovanna Valle</title>
 </head>
+<header>
+    <h1>Giovanna Valle</h1>
+    <nav>
+        <ul>
+            <li><a href="#index">Inicio</a></li>
+            <li><a href="#guias">Guías</a></li>
+            <li><a href="#foda">FODA</a></li>
+            <li><a href="#retro">Retroalimentación y Continuidad</a></li>
+        </ul>
+    </nav>
+</header>
 <body>
-    <h1>Índice de Guías</h1>
-    <div class="contenedor-guias">
-        <!-- Primer cuadro de Guía 1 -->
-        <section class="guia">
-            <p><b>Guía 1</b></p>
-            <a href="20225407_Guia1/estilos_embebidos.html">Ejercicio 1</a>
-            <a href="20225407_Guia1/ejemplo2.html">Ejercicio 2</a>
-            <a href="20225407_Guia1/paises.html">Ejercicio 3</a>
-            <a href="20225407_Guia1/SerieYOU.html">Serie Favorita</a>
-        </section>
+    <section id="index">
+        <h2>¿Quién es Giovanna?</h2>
+        <p><b>Nombre:</b> Melanie Giovanna Valle Benavides</p>
+        <p><b>Carnet:</b> 20225407</p>
+        <p><b>Biografía:</b> Mi pasión es la música y el arte. Me gusta mucho la informática, 
+            ya que mi papá me enseñó sobre esta área desde que tenía 4 años. 
+            Desde entonces, he estado explorando toda la parte de computo en 
+            diferentes proyectos.</p>
+    </section>
 
-        <!-- Segundo cuadro de Guía 2 -->
-        <section class="guia">
-            <p><b>Guía 2</b></p>
-            <a href="20225407_Guia2/pelicula.html">Ejercicio 1</a>
-            <a href="20225407_Guia2/tablero.html">Ejercicio 2</a>
-            <a href="20225407_Guia2/biografia.html">Biografía</a>
-        </section>
+    <section>
+        <h2>Datos del Curso</h2>
+        <p><b>Curso:</b> Desarrollo Web</p>
+        <p><b>Descripción:</b> En este curso, hemos aprendido los conceptos fundamentales del desarrollo web, como HTML, CSS, y la creación de páginas web responsivas. También hemos trabajado en proyectos prácticos que nos ayudan a aplicar estas tecnologías en entornos reales.</p>
+    </section>
 
-        <!-- Tercer cuadro de Guía 2 -->
-        <section class="guia">
-            <p><b>Guía 3</b></p>
-            <a href="20225407_Guia3/oscares.html">Ejercicio 1</a>
-            <a href="20225407_Guia3/menu_horizontal.html">Ejercicio 2</a>
-            <a href="20225407_Guia3/index.html">Ejercicio 3 - INDEX</a>
-            <a href="20225407_Guia3/planes.html">Ejercicio 3 - PLANES</a>
-            <a href="20225407_Guia3/galeria.html">Ejercicio 3 - GALERÍA</a>
-            <a href="20225407_Guia3/analisis.html">Cartas</a>
-        </section>
-    </div>
+    <section id="guias">
+        <h2>Guías de Ejercicios</h2>
+        <div class="button-container">
+            <a href="guia1.html" class="guide-button">Guía 1</a>
+            <a href="guia2.html" class="guide-button">Guía 2</a>
+            <a href="guia3.html" class="guide-button">Guía 3</a>
+            <a href="guia4.html" class="guide-button">Guía 4</a>
+        </div>
+    </section>
+
+    <section id="foda">
+        <h2>FODA sobre el Desempeño</h2>
+        <p><b>Fortalezas:</b> He mejorado mucho en el uso de HTML y CSS, especialmente entender la función de cada cosa y la responsividad.</p>
+        <p><b>Oportunidades:</b> El aprendizaje de desarrollo web me ha permitido adquirir habilidades que serán útiles en proyectos 
+                futuros, aportando en mi visualización espacial, imaginación y en habilidades para el futuro.</p>
+        <p><b>Debilidades:</b> Aún siento que debo seguir trabajando en el manejo de CSS avanzado, especialmente en flexbox y grid.</p>
+        <p><b>Amenazas:</b> La falta de tiempo debido a otras asignaturas podría haber afectado mi progreso.</p>
+    </section>
+
+    <section id="retro">
+        <h2>Retroalimentación del Curso</h2>
+        <p><b>Lo que me ha gustado:</b> Me ha encantado trabajar en proyectos desafiantes, que pongan a prueba mis conocimientos.</p>
+        <p><b>Lo que no me ha gustado:</b> Algunos temas avanzados de CSS fueron complicados de entender y requerían mucho tiempo.</p>
+        <p><b>Retos asumidos:</b> Aprender a diseñar sitios web responsivos.</p>
+        <p><b>Sugerencias para mejorar:</b> Sería muy util tener más tiempo para poder completar las guías o tener guías mas cortas.</p>
+    </section>
+
+    <section>
+        <h2>Aprendizaje Continuo</h2>
+        <p><b>Recursos adicionales:</b></p>
+        <ul>
+            <li><a href="https://www.w3schools.com/html/">w3schools</a> - Tutoriales para diversos lenguajes de programación y etiqueta.</li>
+            <li><a href="https://codepen.io/trending">Code Pen</a> - Inspiración sobre otras creaciones en HTML y CSS.</li>
+        </ul>
+        <p><b>Planes futuros:</b> Me gustaría explorar más sobre JavaScript y profundizar como CSS puede hacer cosas que parecen programadas</p>
+    </section>
 </body>
 </html>
